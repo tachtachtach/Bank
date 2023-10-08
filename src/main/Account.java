@@ -54,7 +54,7 @@ public class Account {
 
     public void setBalanceMoney(double balanceMoney) {
         while (balanceMoney < 0) {
-            System.out.println("should enter the positive");
+            System.out.print("should enter the positive: ");
             balanceMoney = new Scanner(System.in).nextDouble();
         }
         this.balanceMoney = balanceMoney;
@@ -64,7 +64,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return "The number account of " + this.accName + "is: " + this.accNumber + "with money =: " + this.balanceMoney;
+        return "The number account of " + this.accName + " is " + this.accNumber + " with money = " + this.balanceMoney;
     }
 
     //    Nạp tiền
